@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
+
+    <link rel="shortcut icon" href="img/iconfix.png" />
+
+    <!-- MY CSS-->
+    <link href="style.css" rel="stylesheet" />
+
+    <title>YukNgode - Kelas HTML Dasar</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top shadow-sm">
+      <div class="container">
+        <a class="navbar-brand" href="#"><img src="img/iconfix.png" width="55px" /><span> YukNgode.</span></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="index.html"><i class="bi bi-house"></i> Beranda</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="daftar_kelas.html"><i class="bi bi-book"></i> Daftar Kelas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="tentang.html" tabindex="-1" aria-disabled="true"
+                ><i class="bi bi-person"></i> Tentang</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                onclick="alert('Halaman ini masih tahap pengembangan :)')"
+                tabindex="-1"
+                aria-disabled="true"
+                >YukNgode Premium <span class="badge rounded-pill bg-danger">Beta</span></a
+              >
+            </li>
+          </ul>
+          <div class="col-2 d-flex justify-content-end align-items-center">
+            <a class="link-light" href="#" aria-label="Search">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                class="mx-3"
+                role="img"
+                viewBox="0 0 24 24"
+              >
+                <title>Cari...</title>
+                <circle cx="10.5" cy="10.5" r="7.5" />
+                <path d="M21 21l-5.2-5.2" />
+              </svg>
+            </a>
+            <a class="btn btn-outline-light" href="https://github.com/ammarbahtiarasli"><i class="bi bi-github"></i></a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <section id="content" class="content">
+      <main class="container">
+        <div class="row g-5">
+          <div class="col-md-8">
+            <h2 class="pb-4 mb-4 border-bottom">Kelas HTML Dasar</h2>
+            <h3>Video</h3>
+            <p>
+              Merasa lebih mudah menyimak tutorial melalui video atau suara daripada membaca? Tenang, kami sudah
+              mempersiapkannya. Berikut tutorial video tentang apa itu HTML:
+            </p>
+            <iframe
+              width="100%"
+              height="350"
+              margin="5px"
+              src="https://www.youtube.com/embed/NBZ9Ro6UKV8"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+
+            <hr />
+            <article class="blog-post">
+              <h3 class="blog-post-title">Pengertian HTML</h3>
+              <p class="blog-post-meta">9 September, 2021 by <a href="#">AmmarBahtiar</a></p>
+
+              <p>
+                HTML adalah bahasa standar pemrogaman yang digunakan untuk membuat halaman website, yang diakses melalui
+                internet. Singkatan dari "Hypertext Markup Language" atau "bahasa markup".
+              </p>
+              <hr />
+              <h3>Sejarah HTML</h3>
+              <p>
+                HTML dibuat oleh Tim Berners-Lee, seorang ahli fisika di lembaga penelitian CERN yang berlokasi di
+                Swiss. Versi pertamanya dirilis pada tahun 1991, dengan 18 tag. Sejak saat itu, setiap kali ada versi
+                barunya, pasti akan selalu ada tag dan attribute (tag modifier) yang juga baru. Ketika bekerja dengan
+                bahasa markup ini , Anda menggunakan struktur kode sederhana (tag dan attribute) untuk mark up halaman
+                website. Misalnya, Anda membuat sebuah paragraf dengan menempatkan enclosed text di antara tag pembuka
+                (p) dan tag penutup (/p) .
+              </p>
+
+              <h3>Fungsi HTML</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius vitae quam asperiores in harum, libero
+                corporis quidem provident commodi officiis!
+              </p>
+              <ul>
+                <li>First list item</li>
+                <li>Second list item with a longer description</li>
+                <li>Third list item to close it out</li>
+              </ul>
+              <p>And this is an ordered list:</p>
+              <ol>
+                <li>First list item</li>
+                <li>Second list item with a longer description</li>
+                <li>Third list item to close it out</li>
+              </ol>
+            </article>
+
+            <article class="blog-post">
+              <h2 class="blog-post-title">kelebihan dan Kekurangan HTML</h2>
+              <p>
+                Sama seperti hal teknis lainnya dalam dunia web, bahasa markup ini juga punya kelebihan dan
+                kekurangannya.
+              </p>
+              <ul>
+                <li>Digunakan secara luas dan memiliki banyak sumber serta komunitas yang besar.</li>
+                <li>Second list item with a longer description</li>
+                <li>Third list item to close it out</li>
+              </ul>
+              <p>
+                This is some additional paragraph placeholder content. It's a slightly shorter version of the other
+                highly repetitive body text used throughout.
+              </p>
+            </article>
+
+            <nav class="blog-pagination" aria-label="Pagination">
+              <div class="d-grid gap-2">
+                <a class="btn btn-block btn-orange text-white p-2" href="daftar_kelas.html"
+                  ><i class="bi bi-arrow-return-left"></i> Kembali ke Daftar Kelas</a
+                >
+              </div>
+            </nav>
+          </div>
+
+          <div class="col-md-4">
+            <div class="position-sticky" style="top: 4rem">
+              <div class="p-4 mb-3 bg-about-custom rounded">
+                <h4 class="fst-italic">About</h4>
+                <p class="mb-3">Website Pembelajaran by <a href="https://ammarbahtiar.my.id">AmmarBahtiar</a></p>
+              </div>
+
+              <iframe
+                width="100%"
+                height="300"
+                scrolling="no"
+                frameborder="no"
+                allow="autoplay"
+                src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1113975205&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
+              ></iframe>
+              <div
+                style="
+                  font-size: 10px;
+                  color: #cccccc;
+                  line-break: anywhere;
+                  word-break: normal;
+                  overflow: hidden;
+                  white-space: nowrap;
+                  text-overflow: ellipsis;
+                  font-family: Interstate, Lucida Grande, Lucida Sans Unicode, Lucida Sans, Garuda, Verdana, Tahoma,
+                    sans-serif;
+                  font-weight: 100;
+                "
+              >
+                <a
+                  href="https://soundcloud.com/ammarbahtiarasli"
+                  title="AmmarBahtiar"
+                  target="_blank"
+                  style="color: #cccccc; text-decoration: none"
+                  >AmmarBahtiar</a
+                >
+                ·
+                <a
+                  href="https://soundcloud.com/ammarbahtiarasli/positions-remix"
+                  title="Ariana Grande - Positions (AmmarBahtiar x Clairuz Remix)"
+                  target="_blank"
+                  style="color: #cccccc; text-decoration: none"
+                  >Ariana Grande - Positions (AmmarBahtiar x Clairuz Remix)</a
+                >
+              </div>
+
+              <div class="p-4">
+                <h4 class="fst-italic">Kelas Lainnya</h4>
+                <ol class="list-unstyled mb-0">
+                  <li><a href="kelas_css.html">Kelas CSS Pemula</a></li>
+                  <li><a href="kelas_js.html">Kelas JavaScript Pemula</a></li>
+                  <li><a href="#">Kelas Bootstrap Pemula</a></li>
+                  <li><a href="#">Kelas Laravel Pemula</a></li>
+                  <li><a href="#">Kelas MongoDB Pemula</a></li>
+                  <li><a href="#">Kelas React JS Pemula</a></li>
+                  <li><a href="#">Kelas Vue JS Pemula</a></li>
+                </ol>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </section>
+
+    <div class="container">
+      <div class="row">
+        <div class="col mb-5"></div>
+        <center>
+          <img src="img/academy-googleatp-3.png" width="210px" alt="" />
+          <img src="img/homepage-partner-google.png" width="150px" alt="" />
+          <img src="img/homepage-partner-microsoft.png" width="150px" alt="" />
+        </center>
+      </div>
+    </div>
+
+    <!-- Footer-->
+    <footer class="footer-custom text-light py-5">
+      <div class="container">
+        <p class="float-end mb-1">
+          <a class="text-white" href="#"><i class="bi bi-arrow-up"></i> Top</a>
+        </p>
+        <p class="mb-1">Copyright &copy; 2021 <b>YukNgode</b>. All Rights Reserved.</p>
+      </div>
+    </footer>
+    <!-- Akhir Footer-->
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
