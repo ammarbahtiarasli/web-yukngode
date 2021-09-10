@@ -16,6 +16,9 @@
 
     <link rel="shortcut icon" href="img/iconfix.png" />
 
+    <!-- aos js -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
     <!-- MY CSS-->
     <link href="style.css" rel="stylesheet" />
 
@@ -86,7 +89,7 @@
       <h1 class="title head display-4">Mari Belajar.</h1>
       <h1 class="title head display-4">Perluas Wawasan Anda.</h1>
       <p class="head"><i class="bi bi-person"></i> 100,000+ Pengguna | <i class="bi bi-book"></i> 50+ Kelas Premium</p>
-      <a class="btn btn-mulai head text-white p-3 mt-4" href="daftar_kelas.html">Belajar Sekarang</a>
+      <a class="btn btn-mulai head text-white p-3 mt-4" data-aos="zoom" href="daftar_kelas.html">Belajar Sekarang</a>
       <br />
       <br />
     </section>
@@ -144,7 +147,7 @@
             </section>
             <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-3 justify-content-around">
               <div class="col">
-                <div class="card border-dark text-light shadow-sm">
+                <div class="card border-dark text-light shadow-sm" data-aos="zoom-in">
                   <img src="img/html.jpg" width="100%" height="auto" alt="gambar" />
 
                   <div class="card-body">
@@ -161,7 +164,7 @@
                 </div>
               </div>
               <div class="col">
-                <div class="card border-dark text-light shadow-sm">
+                <div class="card border-dark text-light shadow-sm" data-aos="zoom-in" data-aos-delay="200">
                   <img src="img/css.jpg" width="100%" height="auto" alt="gambar" />
 
                   <div class="card-body">
@@ -178,7 +181,7 @@
                 </div>
               </div>
               <div class="col">
-                <div class="card border-dark text-light shadow-sm">
+                <div class="card border-dark text-light shadow-sm" data-aos="zoom-in" data-aos-delay="400">
                   <img src="img/js.jpg" width="100%" height="auto" alt="gambar" />
 
                   <div class="card-body">
@@ -195,7 +198,7 @@
                 </div>
               </div>
               <div class="col">
-                <div class="card border-dark text-light shadow-sm">
+                <div class="card border-dark text-light shadow-sm" data-aos="zoom-in" data-aos-delay="600">
                   <img src="img/bs.jpg" width="100%" height="auto" alt="gambar" />
 
                   <div class="card-body">
@@ -246,5 +249,17 @@
       integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
       crossorigin="anonymous"
     ></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+    <script>
+      gsap.from(".navbar", { duration: 1.5, y: "-100%", opacity: 0, ease: "bounce" });
+      gsap.from(".jumbotron h1", { duration: 1, x: -100, opacity: 0 });
+      gsap.from(".jumbotron p", { duration: 1, x: -100, opacity: 0 });
+    </script>
   </body>
 </html>
